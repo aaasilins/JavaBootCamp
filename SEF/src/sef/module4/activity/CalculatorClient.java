@@ -28,6 +28,15 @@ public class CalculatorClient {
 		result = normalCalc.multiply(mul);
 		System.out.println("2) Multiplication result is " + result); 
 		
+		//Subtract
+		int subtract = normalCalc.subtract(7, 1);
+		System.out.println("3) Subtraction result is "+subtract);
+				
+		
+		//Divide
+		int divide = normalCalc.divide(8, 2);
+		System.out.println("4) Divide result is "+divide);
+		
 
 	}
 

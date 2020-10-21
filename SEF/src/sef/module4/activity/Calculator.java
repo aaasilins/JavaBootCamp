@@ -8,14 +8,7 @@ package sef.module4.activity;
  *
  */
 
-public class datastruc{
-	
-	int ,
-	float,
-	long, 
-	string, 
-	 
-}
+
 public class Calculator {
 
 	
@@ -41,7 +34,7 @@ public class Calculator {
 	}
 	
 	// Add 
-	public int add(object ;) {
+	public int add(int x, int y) {
 		int sum = x + y;
 		return sum;
 	}
