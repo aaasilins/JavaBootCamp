@@ -9,10 +9,12 @@ public class Student_I extends Person_I {
 	private int grade;
 	private String school;
 	
-	//Behavior - default constructor
+	//Behavior - default constructor. This will override the default constructor of Person?
 	public Student_I(){ 
 		System.out.println("I'm Student_I constructor"); 
 	}
+	
+	// Do we need a parametrized constructor like in Person_I class?
 	
 	// getter for int grade
 	public int getGrade() {
@@ -34,7 +36,7 @@ public class Student_I extends Person_I {
 		this.school = school;
 	}
 	
-	public void announce(){
+	public void announce(){ //what happens when you have the same name of the method as te parent class? or is it just overriding?
 		super.announce();  // calls announce() method of Person class
 		System.out.println("Inside Student Class");
 	}
