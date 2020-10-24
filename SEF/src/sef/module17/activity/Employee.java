@@ -5,7 +5,7 @@ class Employee {
 	String id;
 	String firstName;
 	String lastName;
-	int salary;
+	
 	public String getId() {
 		return id;
 	}
@@ -24,12 +24,7 @@ class Employee {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
+
 	
 	
 }
