@@ -1,0 +1,3 @@
+Ewan McGregor title Actor salary 25000
+John Malkovic title Actor salary 10000
+Maria Abramovic title Artist salary 5000

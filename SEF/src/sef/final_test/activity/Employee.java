@@ -1,13 +1,11 @@
 package sef.final_test.activity;
 
-//class Employee must extend class Person. Complete code for the same
-public class Employee extends Person  {
-	
-	//Attributes
+public class Employee extends Person implements Humanity   {
+
 	private int salary;
 	private String title;
 	private String company;
-	
+
 	public String getCompany() {
 		return company;
 	}
@@ -16,24 +14,20 @@ public class Employee extends Person  {
 		this.company = company;
 	}
 
-	//Behavior - write default constructor.
 	public Employee() {
-		
+
 	}
-	
-	//Parameterized constructor
+
 	public Employee(String title, String company) {
 		this.company = company;
 		this.title = title;
 	}
 
-	
-	// write getter for String title
+
 	public String getTitle() {
 		return title;
 	}
-	
-	// write setter for String title
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -52,5 +46,5 @@ public class Employee extends Person  {
 	}
 
 
-	
+
 }

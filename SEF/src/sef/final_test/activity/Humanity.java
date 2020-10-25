@@ -6,5 +6,6 @@ public interface Humanity {
 	public void setFirstName(String firstName);
 	public void setSecondName(String secondName);
 	public void setAge(int age);
-	
+
+
 }

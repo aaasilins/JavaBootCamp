@@ -12,43 +12,43 @@ public class StudentTest extends TestCase {
 	private final PrintStream standardOut = System.out;
 	private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
-	
+
 	protected void setUp() throws Exception {
 		super.setUp();
-		
-	System.setOut(new PrintStream(outputStreamCaptor));		
+
+		System.setOut(new PrintStream(outputStreamCaptor));		
 		theStudent = new Student();
 		theParamStudent = new Student("Stockholm University");
 	}
-	
+
 	protected void tearDown() throws Exception {
 		super.tearDown();
-		
+
 	}
-	
-public void testStudentDefaultConstructor() {
-		
+
+	public void testStudentDefaultConstructor() {
+
 		assert(theStudent.getFirstName()=="Unknown");
 		assert(theStudent.getAge()==0);
-}
+	}
 
-public void testStudentParameterizedConstructor() {
-	assert(theParamStudent.getFirstName()=="Unknown");
-	assert(theParamStudent.getAge()==0);
-	assert(theParamStudent.getSchoolName()=="Stockholm University");
-	
-}
+	public void testStudentParameterizedConstructor() {
+		assert(theParamStudent.getFirstName()=="Unknown");
+		assert(theParamStudent.getAge()==0);
+		assert(theParamStudent.getSchoolName()=="Stockholm University");
 
-public void testStudentSchool() {
-	theStudent.setSchoolName("MIT");
-	assert(theStudent.getSchoolName()=="MIT");
-}
+	}
 
-public void testStudentIntroduction() {
-	
-	theParamStudent.introduction();
-	Assert.assertEquals("I study in University Stockholm University", outputStreamCaptor.toString().trim());
-	
-}
-	
+	public void testStudentSchool() {
+		theStudent.setSchoolName("MIT");
+		assert(theStudent.getSchoolName()=="MIT");
+	}
+
+	public void testStudentIntroduction() {
+
+		theParamStudent.introduction();
+		Assert.assertEquals("I study in University Stockholm University", outputStreamCaptor.toString().trim());
+
+	}
+
 }

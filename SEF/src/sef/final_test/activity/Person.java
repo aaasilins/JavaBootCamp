@@ -3,7 +3,7 @@ package sef.final_test.activity;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Person implements Humanity {
+public class Person {
 
 	//Attributes
 	private String firstName;
